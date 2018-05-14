@@ -1,0 +1,39 @@
+.basket {
+	padding: 0 100px;
+}
+.basket__item {
+	display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+    color: #d7c5c5;
+    padding-right: 100px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.basket__item-img {
+	width: 240px;
+	height: auto;
+	padding-right: 50px;
+}
+.basket__item-delete,
+.basket__deleteAll {
+    background: #d7c5c5;
+    display: inline-block;
+    padding: 0px 12px;
+    border: 1px solid #0d0c0d;
+    color: #0d0c0d;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: translateY(1px);
+}
+.basket__total {
+	text-align: right;
+    font-weight: 600;
+    color: #433b39;
+    display: inline-block;
+    float: right;
+}
+.basket__total-price {
+    color: #0c0b0c;
+    text-decoration: underline;
+}

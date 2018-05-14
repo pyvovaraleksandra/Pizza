@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pizza {
+
+  &__header {
+    background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    &-logo {
+      width: 100px;
+      margin-right: 50px;
+    }
+  }
+  &__body {
+    display: flex;
+  }
+  &__products {
+    padding: 0 100px;
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-product {
+            position: relative;
+        width: 31%;
+        display: inline-block;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+        color: #d7c5c5;
+
+        &:hover {
+          cursor: pointer;
+          .pizza__products-list-product-data-ingridients {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 0;
+          }
+        }
+
+        &-img {
+          width: 100%;
+        }
+        &-data {
+          &-bottom {
+            display: flex;
+            justify-content: space-around;
+          }
+          &-ingridients {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 182px;
+            background: linear-gradient(to right, #0a090a, #231e2261, #4a413f6e, #0a090a);
+            transform: translateY(100%);
+            opacity: 0;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 73%;
+  margin: 0 auto;
+  display: none;
+  &_show {
+    display: block;
+  }
+  &__list {
+    display: flex;
+  }
+  
+  &-item {
+    background: linear-gradient(to right, #0a090a, #4a413f6e);
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+  }
+}

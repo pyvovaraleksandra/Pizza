@@ -1,0 +1,197 @@
+body {
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+  h3 {
+    font-weight: 400;
+  }
+a, a:hover {
+  text-decoration: none;
+}
+
+.pizza__header-left {
+  display: flex;
+  align-items: center;
+}
+.pizza__body-aside {
+  min-width: 250px;
+}
+.pizza-ingridients-quantity {
+    width: 43px;
+    background: transparent;
+    border: 1px solid #d7c5c5;
+    color: #d7c5c5;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.pizza-ingridients-buy {
+    margin-top: 20px;
+    background: #d7c5c5;
+    display: inline-block;
+    padding: 3px 20px;
+    border: 1px solid #0d0c0d;
+    color: #0d0c0d;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .pizza-ingridients-buy:hover {
+    transform: translateY(-5px);
+  }
+
+.pagination {
+  display: none;
+}
+.pagination_show {
+  display: block;
+  width: 73%;
+  margin: 0 auto;
+}
+.pagination__list {
+  display: flex;
+}
+.pagination-item {
+    background: linear-gradient(to right, #0a090a, #4a413f6e);
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.pagination-item:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.pizza__body-show {
+  display: flex;
+}
+.pizza__body-show-li {
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+
+
+  .pizza__list {
+    display: none;
+  }
+  .pizza__list_show {
+    padding: 0 100px;
+    display: block;
+  }
+  .pizza__list-ul-li {
+    display: flex;
+    align-items: center;
+        background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+    color: #d7c5c5;
+    padding: 10px 100px;
+    margin-bottom: 10px;
+  }
+  .pizza__list-ul-li-img {
+    width: 45px;
+    height: auto;
+    padding-right: 20px;
+  }
+  .pizza__list-ul-li-name {
+    min-width: 200px;
+    padding-right: 20px;
+
+  }
+
+.pizza__body-filter {
+      display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.pizza__header {
+  background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+  justify-content: space-between;  
+  display: flex;
+  align-items: center;
+  padding: 15px 50px; }
+  .pizza__header-logo {
+    width: 100px;
+    margin-right: 50px; }
+  .pizza__header-name {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    margin-left: -30px;
+  }
+    .pizza__body {
+    display: flex;
+  }
+.pizza__products {
+  display: none;
+}
+.pizza__products_show {
+  display: block;
+  padding-right: 50px;
+}
+  .pizza__products-list {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pizza__products-list.show {
+    display: flex;
+    justify-content: space-between;
+  }
+    .pizza__products-list-product {
+      overflow: hidden;
+      position: relative;
+      width: 31%;
+      display: inline-block;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      background: linear-gradient(to right, #231e22, #4a413f, #0a090a);
+      color: #d7c5c5; }
+      .pizza__products-list-product:hover {
+        cursor: pointer; }
+        .pizza__products-list-product:hover .pizza__products-list-product-data-ingridients {
+          transform: translateY(0);
+          opacity: 1; }
+      .pizza__products-list-product-img {
+        width: 100%; }
+      .pizza__products-list-product-data-bottom {
+        display: flex;
+        justify-content: space-around; }
+      .pizza__products-list-product-data-ingridients {
+        transition: 0.3s;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          transform: translateY(100%);
+          opacity: 0;
+
+          height: 100%;
+    background: linear-gradient(to right, #0a090a, #231e22b8, #4a413fb3, #0a090a);
+
+      }
+  }
+
+
+
+
+
+
+
+
+
+
